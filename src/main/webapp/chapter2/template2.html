@@ -1,0 +1,41 @@
+<head>
+<link href="../resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext-base.js"></script>
+<script type="text/javascript" src="../ext-all-debug-w-comments.js"></script>
+<script type="text/javascript" src="../ext-lang-zh_CN.js"></script>
+
+<script type="text/javascript">
+	Ext.onReady(function(){
+		
+		var my = new Ext.Template(
+		'<div style="background-color: {color}; margin: 10px;">',
+			'<b> Name: </b> {name}<br/>',
+			'<b> Age: </b> {age}<br/>',
+			'<b> DOB: </b> {dob}<br/>',		
+		'</div>'		
+		);
+		my.compile();
+		my.append(document.body,{
+			color : "#E9E9FF",
+			name : 'lcj',
+			age : 28,
+			dob : '10/20/89'				
+		});
+		
+		my.append(document.body,{
+			color : "#FFE9E9",
+			name : 'lcj2',
+			age : 28,
+			dob : '08/14/87'				
+		});	
+		
+	});
+
+</script>
+
+</head>
+
+
+

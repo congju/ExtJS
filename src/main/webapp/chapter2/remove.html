@@ -1,0 +1,21 @@
+﻿<head>
+<link href="../resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+<link href="first.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext-base.js"></script>
+<script type="text/javascript" src="../ext-all-debug-w-comments.js"></script>
+<script type="text/javascript" src="../ext-lang-zh_CN.js"></script>
+</head>
+
+<div id='div1' class='myDiv'>
+	<div id='child1'>Child 1</div>
+	<div id='child2'>Child 2</div>
+	<div id='child3'>Child 3</div>
+	<div id='child4'>Child 4</div>
+	<div id='child5'>Child 5</div>
+</div>
+<script>
+	var myDiv1 = Ext.get('div1');
+	var firstChild = myDiv1.down('div:last-child');
+	firstChild.remove();
+</script>

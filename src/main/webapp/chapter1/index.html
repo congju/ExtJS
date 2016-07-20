@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<title>Insert title here</title>
+
+<link href="../ext/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../ext/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext/ext-all-debug-w-comments.js"></script>
+<script type="text/javascript" src="../ext/ext-lang-zh_CN.js"></script>
+
+<script type="text/javascript">
+	function buildWindow(){
+		var win = new Ext.Window({
+		
+			id : 'myWindow',
+			title : 'My first Ext JS',
+			width : 300,
+			height : 150,
+			layout : 'fit',
+			autoLoad : {
+				url : 'sayHi.html',
+				scripts : true
+			}
+		});
+		win.show();
+	}
+	Ext.onReady(buildWindow);	
+</script>
+
+</head>
+<body>
+	<h1>sss</h1>
+</body>
+</html>
