@@ -1,0 +1,31 @@
+<html>
+<head>
+
+<title>Insert title here</title>
+
+<link href="../ext/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../ext/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext/ext-all-debug-w-comments.js"></script>
+<script type="text/javascript" src="../ext/ext-lang-zh_CN.js"></script>
+
+<!--布局控件， 基类 Ext.layout.ContainerLayout   layout  -->
+<script type="text/javascript">
+	Ext.onReady(function(){
+		var myPanel = new Ext.Panel({
+			
+			renderTo : Ext.getBody(),
+			width : 400,
+			height : 200,
+			layout : "column",
+			items: [{columnWidth : .5,title : "panel 1"},			        
+			        {columnWidth : .5,title : "panel 2"}]
+		});
+	});	
+</script>
+
+</head>
+<body>
+	
+</body>
+</html>

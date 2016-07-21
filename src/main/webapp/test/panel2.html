@@ -1,0 +1,32 @@
+<html>
+<head>
+
+<title>Insert title here</title>
+
+<link href="../ext/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../ext/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext/ext-all-debug-w-comments.js"></script>
+<script type="text/javascript" src="../ext/ext-lang-zh_CN.js"></script>
+
+<script type="text/javascript">
+	Ext.onReady(function(){
+		var myPanel = new Ext.Panel({
+			
+			renderTo : Ext.getBody(),
+			title : 'test ',
+			width : 400,
+			height : 300,
+			html : 'test bbb',
+			tbar : [{text : 'topToolbar'}],
+			bbar : [{text : 'bottonToolbar'}],
+			buttons : [{text : 'footber'}]
+		});
+	});	
+</script>
+
+</head>
+<body>
+	
+</body>
+</html>

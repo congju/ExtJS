@@ -1,0 +1,74 @@
+<html>
+<head>
+
+<title>Insert title here</title>
+
+<link href="../ext/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../ext/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext/ext-base.js"></script>
+<script type="text/javascript" src="../ext/ext-all-debug-w-comments.js"></script>
+<script type="text/javascript" src="../ext/ext-lang-zh_CN.js"></script>
+
+<!--布局控件， 基类 Ext.layout.BorderLayout   layout  -->
+<script type="text/javascript">
+	Ext.onReady(function(){
+		var myPanel = new Ext.Viewport({
+			layout : "border",
+			renderTo : Ext.getBody(),
+			
+			items: [{
+				title : 'north',
+				region : 'north',
+				split : true,
+				border : true,
+				collapsible : true,
+				height : 100,
+				minSize : 100,
+				maxSize : 120
+			},
+			{
+				title : 'south',
+				region : 'south',
+				split : true,
+				border : true,
+				collapsible : true,
+				height : 100,
+				minSize : 100,
+				maxSize : 120
+			},
+			{
+				title : 'east',
+				region : 'east',
+				split : true,
+				border : true,
+				collapsible : true,
+				height : 120,
+				minSize : 120,
+				maxSize : 200
+			},
+			{
+				title : 'west',
+				region : 'west',
+				split : true,
+				border : true,
+				collapsible : true,
+				height : 120,
+				minSize : 120,
+				maxSize : 200
+			},
+			{
+				title : 'center',
+				region : 'center',
+				split : true,
+				border : true,
+				collapsible : true,
+			}]
+		});
+	});	
+</script>
+
+</head>
+<body>
+	
+</body>
+</html>
